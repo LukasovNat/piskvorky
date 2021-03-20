@@ -10,6 +10,7 @@ body {
   background-color: #283e50;
   width: 400px;
   margin: 0 auto;
+  padding: 0;
 }
 
 .nazevhry {
@@ -26,24 +27,43 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5;
 }
-
 .obrazek {
   margin-left: auto;
   margin-right: auto;
-  width: 364px;
+  padding: 0px 0px;
+  margin-top: 80px;
 }
-
+.ctyrlistek {
+  width: 400px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.tlacitka {
+  border: none;
+  color: white;
+  padding: 0px 0px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
 .button_pravidla {
   background-color: #1fcca4;
   color: #ffffff;
-} /* Green */
+  padding: 20px 80px;
+  font-size: medium;
+} /* zelene*/
 
 .button_pravidla:hover {
   background-color: #1cbb96;
 }
 .button_hrat {
   background-color: #0197f6;
-} /* Blue */
+  color: #ffffff;
+  padding: 20px 80px;
+  font-size: medium;
+} /* modre */
 
 .button_hrat:hover {
   background-color: #0090e9;
