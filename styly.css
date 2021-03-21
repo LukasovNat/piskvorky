@@ -4,13 +4,13 @@ body {
   background-size: cover;
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
 }
 
 .formatboxu {
   background-color: #283e50;
   width: 400px;
   margin: 0 auto;
-  padding: 0;
 }
 
 .nazevhry {
@@ -23,36 +23,39 @@ body {
 .ucelhry {
   color: #ffffff;
   text-align: center;
-  font-size: 20px;
+  font-size: 18px;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .obrazek {
   margin-left: auto;
   margin-right: auto;
-  padding: 0px 0px;
   margin-top: 80px;
 }
 .ctyrlistek {
   width: 400px;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 0px 0px;
 }
-.tlacitka {
+.button {
   border: none;
-  color: white;
   padding: 0px 0px;
   text-align: center;
-  text-decoration: none;
   display: flex;
   flex-direction: column;
+  text-decoration: none;
   cursor: pointer;
 }
 .button_pravidla {
   background-color: #1fcca4;
+  border: none;
   color: #ffffff;
   padding: 20px 80px;
-  font-size: medium;
+  font-size: 18px;
+  width: 400px;
 } /* zelene*/
 
 .button_pravidla:hover {
@@ -60,9 +63,11 @@ body {
 }
 .button_hrat {
   background-color: #0197f6;
+  border: none;
   color: #ffffff;
   padding: 20px 80px;
-  font-size: medium;
+  font-size: 18px;
+  width: 400px;
 } /* modre */
 
 .button_hrat:hover {
