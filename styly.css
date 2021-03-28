@@ -4,7 +4,7 @@ body {
   background-size: cover;
   display: flex;
   flex-direction: column;
-  height: 1000px;
+  height: 100vh;
 }
 
 .formatboxu {
@@ -23,7 +23,7 @@ body {
 .ucelhry {
   color: #ffffff;
   text-align: center;
-  font-size: 18px;
+  font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5;
   margin-left: 10px;
@@ -47,29 +47,25 @@ body {
   text-align: center;
   display: block;
   text-decoration: none;
+}
+.button_pravidla,
+.button_hrat {
+  border: none;
+  color: #ffffff;
+  padding: 20px 80px;
+  font-size: 16px;
+  width: 400px;
   cursor: pointer;
 }
 .button_pravidla {
   background-color: #1fcca4;
-  border-color: none;
-  color: #ffffff;
-  padding: 20px 80px;
-  font-size: 18px;
-  width: 400px;
-} /* zelene*/
-
+}
 .button_pravidla:hover {
   background-color: #1cbb96;
 }
 .button_hrat {
   background-color: #0197f6;
-  border: none;
-  color: #ffffff;
-  padding: 20px 80px;
-  font-size: 18px;
-  width: 400px;
-} /* modre */
-
+}
 .button_hrat:hover {
   background-color: #0090e9;
 }
