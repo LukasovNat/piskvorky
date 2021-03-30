@@ -5,7 +5,117 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styly.css" />
-    <title>Document</title>
+    <title>Pravidla hry</title>
   </head>
-  <body></body>
+  <body class="body">
+    <!--Oddil s textovym popisem hry-->
+    <div class="pravidlaHry">
+      <h1>Pravidla</h1>
+      <ol class="text">
+        <li>Hra piškvorky je určena pro dva hráče.</li>
+        <li>Hraje se na hrací ploše 10×10, tvořené poli ve tvaru čtverce.</li>
+        <li>
+          Na začátku si hráči rozdělí role. Jeden bude hrát za kolečka
+          <img class="krouzek" src="krouzek.svg" alt="ikonka kolecko" />
+          , druhý bude hrát za křížky.
+          <img class="krizek" src="krizek.svg" alt="ikonka krizek" />
+        </li>
+        <li>
+          Losem se určí, kdo bude začínat. V naší aplikaci to vylosujeme za vás.
+        </li>
+        <li>Hráči se střídají v tazích.</li>
+        <li>
+          Hráč, který je na tahu, umístí jeden ze svých symbolů na prázdné pole
+          na hrací ploše. Tj. hráč hrající za křížky umístí křížek, hráč hrající
+          za kolečka umístí kolečko.
+        </li>
+        <li>Křížky a kolečka se umisťují dovnitř políček na hrací ploše.</li>
+        <li>Hráč, který umístí pět svých symbolů do jedné řady, vyhrává.</li>
+        <li>
+          Výherní kombinací se rozumí pět symbolů ve směru vodorovném, svislém
+          nebo šikmém. Mezi pěti symboly tvořícími výherní kombinaci nesmí být
+          žádné prázdné pole ani pole obsazené soupeřovým symbolem.
+        </li>
+        <li>
+          Pokud hráči zaplní celou desku, aniž by někdo umístil pět svých
+          symbolů do jedné řady, hra končí remízou.
+        </li>
+      </ol>
+
+      <!--Oddil s obrazky-->
+      <div class="kontejnerObrazky">
+        <figure class="uzkyPruh">
+          <img
+            class="obrazkyHraciPole"
+            src="instructions-01.jpg"
+            alt="Situace po 3 tazich"
+          />
+          <figcaption class="textPodHracimPolem">
+            Situace po třech tazích - na tahu je hráč s kolečky
+          </figcaption>
+        </figure>
+        <figure class="uzkyPruh">
+          <img
+            class="obrazkyHraciPole"
+            src="instructions-02.jpg"
+            alt="Situace po 4 tazich"
+          />
+          <figcaption class="textPodHracimPolem">
+            Situace po čtyřech tazích
+          </figcaption>
+        </figure>
+        <figure class="uzkyPruh">
+          <img
+            class="obrazkyHraciPole"
+            src="instructions-03.jpg"
+            alt="Vyherni situace s kolecky"
+          />
+          <figcaption class="textPodHracimPolem">
+            Výherní pozice hráče s kolečky
+          </figcaption>
+        </figure>
+      </div>
+      <figure class="uzkyPruh">
+        <img
+          class="obrazkyHraciPole"
+          src="instructions-04.jpg"
+          alt="Situace nikdo nevyhrava"
+        />
+        <figcaption class="textPodHracimPolem">
+          V této situaci nikdo nevyhrává. Pokud je na tahu hráč s kolečky, může
+          přidat další kolečko do šikmé řady, kde už má 4 kolečka, a vyhraje
+        </figcaption>
+      </figure>
+      <figure class="uzkyPruh">
+        <img
+          class="obrazkyHraciPole"
+          src="instructions-05.jpg"
+          alt="Vyherni pozice s krizky"
+        />
+        <figcaption class="textPodHracimPolem">
+          Výherní pozice s křížky
+        </figcaption>
+      </figure>
+      <figure class="uzkyPruh">
+        <img
+          class="obrazkyHraciPole"
+          src="instructions-06.jpg"
+          alt="Vyherni pozice s kolecky - druha moznost"
+        />
+        <figcaption class="textPodHracimPolem">
+          Ještě jedna výherní pozice hráče s kolečky
+        </figcaption>
+      </figure>
+
+      <!--Tlacitka-->
+      <div class="button">
+        <a href="pravidla.html"
+          ><button class="button_pravidla">Úvodní stránka</button></a
+        >
+        <a href="pravidla.html"
+          ><button class="button_hrat">Začít hrát</button></a
+        >
+      </div>
+    </div>
+  </body>
 </html>
