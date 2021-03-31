@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styly.css" />
     <title>Pravidla hry</title>
   </head>
@@ -11,14 +15,14 @@
     <!--Oddil s textovym popisem hry-->
     <div class="pravidlaHry">
       <h1>Pravidla</h1>
-      <ol class="text">
+      <ol class="textSeznamu">
         <li>Hra piškvorky je určena pro dva hráče.</li>
         <li>Hraje se na hrací ploše 10×10, tvořené poli ve tvaru čtverce.</li>
         <li>
           Na začátku si hráči rozdělí role. Jeden bude hrát za kolečka
           <img class="krouzek" src="krouzek.svg" alt="ikonka kolecko" />
-          , druhý bude hrát za křížky.
-          <img class="krizek" src="krizek.svg" alt="ikonka krizek" />
+          , druhý bude hrát za křížky
+          <img class="krizek" src="krizek.svg" alt="ikonka krizek" />.
         </li>
         <li>
           Losem se určí, kdo bude začínat. V naší aplikaci to vylosujeme za vás.
@@ -44,26 +48,31 @@
 
       <!--Oddil s obrazky-->
       <div class="kontejnerObrazky">
-        <figure class="uzkyPruh">
-          <img
-            class="obrazkyHraciPole"
-            src="instructions-01.jpg"
-            alt="Situace po 3 tazich"
-          />
-          <figcaption class="textPodHracimPolem">
-            Situace po třech tazích - na tahu je hráč s kolečky
-          </figcaption>
-        </figure>
-        <figure class="uzkyPruh">
-          <img
-            class="obrazkyHraciPole"
-            src="instructions-02.jpg"
-            alt="Situace po 4 tazich"
-          />
-          <figcaption class="textPodHracimPolem">
-            Situace po čtyřech tazích
-          </figcaption>
-        </figure>
+        <div class="vlozeneObrazky">
+          <figure class="uzkyPruh">
+            <img
+              class="obrazkyHraciPole"
+              src="instructions-01.jpg"
+              alt="Situace po 3 tazich"
+            />
+            <figcaption class="textPodHracimPolem">
+              Situace po třech tazích - na tahu je hráč s kolečky
+            </figcaption>
+          </figure>
+        </div>
+        <div class="vlozeneObrazky">
+          <figure class="uzkyPruh">
+            <img
+              class="obrazkyHraciPole"
+              src="instructions-02.jpg"
+              alt="Situace po 4 tazich"
+            />
+            <figcaption class="textPodHracimPolem">
+              Situace po čtyřech tazích
+            </figcaption>
+          </figure>
+        </div>
+        <div class="vlozeneObrazky">
         <figure class="uzkyPruh">
           <img
             class="obrazkyHraciPole"
@@ -74,8 +83,9 @@
             Výherní pozice hráče s kolečky
           </figcaption>
         </figure>
-      </div>
-      <figure class="uzkyPruh">
+        </div>
+        <div class="vlozeneObrazky">
+          <figure class="uzkyPruh">
         <img
           class="obrazkyHraciPole"
           src="instructions-04.jpg"
@@ -86,6 +96,8 @@
           přidat další kolečko do šikmé řady, kde už má 4 kolečka, a vyhraje
         </figcaption>
       </figure>
+      </div>
+      <div class="vlozeneObrazky">
       <figure class="uzkyPruh">
         <img
           class="obrazkyHraciPole"
@@ -95,7 +107,9 @@
         <figcaption class="textPodHracimPolem">
           Výherní pozice s křížky
         </figcaption>
-      </figure>
+        </figure>
+      </div>
+      <div class="vlozeneObrazky">
       <figure class="uzkyPruh">
         <img
           class="obrazkyHraciPole"
@@ -106,6 +120,7 @@
           Ještě jedna výherní pozice hráče s kolečky
         </figcaption>
       </figure>
+      </div>
 
       <!--Tlacitka-->
       <div class="button">
