@@ -6,9 +6,11 @@ body {
   background: linear-gradient(#615dad, #ffc8da);
   background-repeat: no-repeat;
   background-size: cover;
+  height: auto;
+}
+.uvod {
   display: flex;
   flex-direction: column;
-  height: auto;
 }
 
 .formatboxu {
@@ -75,13 +77,6 @@ h1,
 }
 
 /*druha cast ukolu*/
-.body {
-  background: linear-gradient(#615dad, #ffc8da);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: auto;
-}
-
 .pravidlaHry {
   background-color: #283e50;
   width: 400px;
@@ -102,8 +97,8 @@ li {
   margin-top: 10px;
 }
 .obrazkyHraciPole {
-  max-height: 300px;
   max-width: 300px;
+  width: 100%;
 }
 .uzkyPruh {
   display: flex;
@@ -119,9 +114,35 @@ li {
   padding: 3px;
   text-align: center;
 }
-/*.kontejnerObrazky {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  
-}*/
+
+img {
+  width: 100%;
+}
+@media (min-width: 500px) {
+  .kontejnerObrazky {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .vlozeneObrazky {
+    width: 50%;
+  }
+  .pravidlaHry {
+    background-color: #283e50;
+    width: 650px;
+    margin: 80px auto;
+  }
+  .button_pravidla,
+  .button_hrat {
+    border: none;
+    color: #ffffff;
+    padding: 20px 80px;
+    font-size: 16px;
+    width: 650px;
+    cursor: pointer;
+  }
+}
+@media (min-width: 800px) {
+  .vlozeneObrazky {
+    width: 50%;
+  }
+}
