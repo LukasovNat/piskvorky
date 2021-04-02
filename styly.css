@@ -6,7 +6,8 @@ body {
   background: linear-gradient(#615dad, #ffc8da);
   background-repeat: no-repeat;
   background-size: cover;
-  height: auto;
+  background-attachment: fixed;
+  height: 150vh;
 }
 .uvod {
   display: flex;
@@ -16,7 +17,7 @@ body {
 .formatboxu {
   background-color: #283e50;
   margin: 0 auto;
-  width: 400px;
+  width: 340px;
 }
 h1,
 .nazevhry {
@@ -24,6 +25,7 @@ h1,
   font-size: 60px;
   text-align: center;
   color: #ffffff;
+  padding-top: 20px;
 }
 
 .ucelhry {
@@ -41,9 +43,9 @@ h1,
   margin-top: 80px;
 }
 .ctyrlistek {
-  width: 400px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  width: 340px;
+  border-top-left-radius: 2%;
+  border-top-right-radius: 2%;
   padding: 0px 0px;
   display: block;
 }
@@ -60,7 +62,8 @@ h1,
   color: #ffffff;
   padding: 20px 80px;
   font-size: 16px;
-  width: 400px;
+  width: 340px;
+  max-width: 100%;
   cursor: pointer;
 }
 .button_pravidla {
@@ -79,14 +82,17 @@ h1,
 /*druha cast ukolu*/
 .pravidlaHry {
   background-color: #283e50;
-  width: 400px;
+  width: 340px;
   margin: 80px auto;
+  border-top-left-radius: 1%;
+  border-top-right-radius: 1%;
 }
 li {
   font-family: Arial, Helvetica, sans-serif;
   color: #ffffff;
   line-height: 1.2;
   padding: 5px 25px;
+  margin-left: 25px;
 }
 
 .krouzek,
@@ -95,9 +101,10 @@ li {
   height: 1em;
   filter: invert(100%);
   margin-top: 10px;
+  margin-left: 5px;
 }
 .obrazkyHraciPole {
-  max-width: 300px;
+  max-width: 500px;
   width: 100%;
 }
 .uzkyPruh {
@@ -122,13 +129,14 @@ img {
   .kontejnerObrazky {
     display: flex;
     flex-wrap: wrap;
+    align-content: space-between;
   }
   .vlozeneObrazky {
     width: 50%;
   }
   .pravidlaHry {
     background-color: #283e50;
-    width: 650px;
+    width: 600px;
     margin: 80px auto;
   }
   .button_pravidla,
@@ -137,12 +145,26 @@ img {
     color: #ffffff;
     padding: 20px 80px;
     font-size: 16px;
-    width: 650px;
+    width: 600px;
     cursor: pointer;
   }
 }
 @media (min-width: 800px) {
   .vlozeneObrazky {
     width: 50%;
+  }
+  .pravidlaHry {
+    background-color: #283e50;
+    width: 700px;
+    margin: 80px auto;
+  }
+  .button_pravidla,
+  .button_hrat {
+    border: none;
+    color: #ffffff;
+    padding: 20px 80px;
+    font-size: 16px;
+    width: 700px;
+    cursor: pointer;
   }
 }
