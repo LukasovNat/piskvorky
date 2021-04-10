@@ -168,3 +168,59 @@ img {
     cursor: pointer;
   }
 }
+/*treti cast ukolu*/
+.kontejner {
+  max-width: 80vmin;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  margin: 80px auto;
+}
+
+img {
+  width: 100%;
+}
+
+.domek,
+.restart {
+  width: 27px;
+  height: 30px;
+}
+.hrajeAikony {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ctverecek {
+  width: 63.4px;
+  height: 61.4px;
+  max-width: 100%;
+  border-width: 1.8px;
+  border-style: solid black;
+  background-color: rgba(255, 255, 255, 0.26);
+  cursor: pointer;
+}
+.ctverecek:hover {
+  background-color: ;
+}
+.tlacitkaHerniPole {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.domek {
+  max-width: 100%;
+  background-color: #1fcca4;
+}
+.domek:hover {
+  background-color: #1cbb96;
+}
+.restart {
+  max-width: 100%;
+  background-color: #0197f6;
+}
+.restart:hover {
+  background-color: #0090e9;
+}
