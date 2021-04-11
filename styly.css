@@ -171,7 +171,6 @@ img {
 /*treti cast ukolu*/
 .kontejner {
   max-width: 80vmin;
-  width: 100%;
   display: block;
   margin: auto;
 }
@@ -194,12 +193,17 @@ img {
   align-items: center;
   justify-content: space-between;
 }
-
+.tlacitkaHerniPole {
+  display: flex;
+  flex-wrap: wrap;
+}
+.radek {
+  width: 80vmin;
+  display: flex;
+}
 .ctverecek {
-  max-width: 100%;
-  width: 45px;
+  width: calc(100% / 5);
   height: 48px;
-
   border-width: 1.8px;
   border-style: solid black;
   background-color: rgba(255, 255, 255, 0.26);
@@ -230,4 +234,5 @@ img {
 }
 .homeARestart {
   margin: 15px;
+  display: flex;
 }
