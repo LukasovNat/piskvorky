@@ -99,9 +99,9 @@ li {
 .krizek {
   width: 1em;
   height: 1em;
-  filter: invert(100%);
-  margin-top: 10px;
-  margin-left: 5px;
+  filter: invert(95%);
+  margin-top: 12px;
+  margin-left: 6px;
 }
 .obrazkyHraciPole {
   max-width: 500px;
@@ -186,6 +186,7 @@ img {
   height: 36px;
   border-radius: 7%;
   margin: 5px;
+  padding: 5px;
 }
 .hrajeAikony {
   display: flex;
@@ -233,6 +234,5 @@ img {
   background-color: #0090e9;
 }
 .homeARestart {
-  margin: 15px;
   display: flex;
 }
