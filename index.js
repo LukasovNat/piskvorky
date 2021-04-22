@@ -1,8 +1,28 @@
 console.log('funguju');
 
-let hrac = 'circle';
+let soucastnyHrac = 'circle';
 
-const imgKoloElm = document.querySelector('.krouzek');
+const herniPoleElm = document.querySelector('.tlacitkaHerniPole');
+const imgElm = document.querySelector('.krouzek');
+
+herniPoleElm.addEventListener('click', (event) => {
+  console.log(event);
+  if (event.target.tagName === 'BUTTON') {
+    if (soucastnyHrac === 'circle') {
+      event.target.classList.add('policko-kolecko');
+      imgElm.src = 'Obrazky/krizek.svg';
+      soucastnyHrac = 'cross';
+      event.target.disabled = true;
+    } else {
+      event.target.classList.add('policko-krizek');
+      imgElm.src = 'Obrazky/krouzek.svg';
+      soucastnyHrac = 'circle';
+      event.target.disabled = true;
+    }
+  }
+});
+
+/*const imgKoloElm = document.querySelector('.krouzek');
 
 const pridejZnak = (event) => {
   if (hrac === 'circle') {
@@ -20,4 +40,4 @@ const pridejZnak = (event) => {
 const buttonElm = document.querySelectorAll('.ctverecek');
 for (let i = 0; i < buttonElm.length; i++) {
   buttonElm[i].addEventListener('click', pridejZnak);
-}
+}*/

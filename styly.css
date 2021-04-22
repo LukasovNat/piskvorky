@@ -213,7 +213,7 @@ img {
   cursor: pointer;
 }
 .ctverecek:hover {
-  opacity: 0.3;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .tlacitkaHerniPole {
@@ -237,4 +237,17 @@ img {
 }
 .homeARestart {
   display: flex;
+}
+
+.policko-kolecko {
+  background-image: url(Obrazky/krouzek.svg);
+  background-size: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.policko-krizek {
+  background-image: url(Obrazky/krizek.svg);
+  background-size: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
 }
